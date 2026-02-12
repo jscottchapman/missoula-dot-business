@@ -1,0 +1,53 @@
+# Missoula.business
+
+> AI and automation consulting for Missoula, Montana businesses.
+
+## About
+
+Missoula.business is operated by J. Scott Chapman, founder of Ravenview Services, a Missoula-based technology consulting firm with over nine years of experience. The mission is simple: help machines do machine work so humans can do human work.
+
+We help local businesses leverage artificial intelligence and automation to eliminate busy work, replace manual processes, and gain a competitive edge — so they can focus on what their business actually does.
+
+## Services
+
+- AI Strategy: Identifying where artificial intelligence delivers real value for your specific business.
+- Process Automation: Eliminating repetitive, manual tasks to reduce errors and free up your team.
+- System Integration: Connecting disparate tools and platforms into seamless workflows.
+- Custom Software Development: Building tailored applications when off-the-shelf solutions fall short.
+- Technical Consulting: Advising on technology decisions with clear ROI projections.
+
+## Approach
+
+1. Conversation — Understand the business, its pain points, and goals.
+2. Diagnosis — Map workflows and identify highest-impact opportunities.
+3. Solution — Build, deploy, and train your team.
+4. Results — Measure time saved, errors eliminated, and revenue gained.
+
+## Who This Is For
+
+Any Missoula-area business dealing with:
+- Repetitive manual tasks consuming staff time
+- Disconnected systems creating information silos
+- Processes prone to human error
+- A desire to use technology for competitive advantage
+
+Industries served include professional services, retail, construction, healthcare, and more.
+
+## Contact
+
+- Email: scott@ravenviewservices.com
+- Location: Missoula, Montana
+- Website: https://missoula.business
+- LinkedIn: https://www.linkedin.com/in/rvnvw/
+- Parent company: https://ravenviewservices.com
+
+## FAQ
+
+Q: Do I need to understand AI to work with you?
+A: No. We take a business-first approach — we understand your challenges, then handle the technology.
+
+Q: What does it cost?
+A: Every engagement starts with a free conversation. Solutions are scoped to your needs and budget, always targeting measurable ROI.
+
+Q: How long does a project take?
+A: Some automations deliver in days. Larger custom builds run weeks to a few months, with iterative delivery so you see results early.
