@@ -825,28 +825,31 @@
 
           var data = await res.json();
 
+          var data;
+          try { data = await res.json(); } catch { data = {}; }
+
           if (res.ok && data.success) {
             msg.textContent = 'Check your inbox! Your audit results are on the way.';
             msg.className = 'form-msg success';
             form.reset();
-            // Track conversions
             if (typeof gtag === 'function') {
               gtag('event', 'audit_submit', { event_category: 'lead', event_label: website });
             }
             if (typeof fbq === 'function') {
-              fbq('track', 'Lead', {
-                content_name: 'seo_audit',
-                content_category: 'audit',
-                value: 0,
-                currency: 'USD'
-              });
+              fbq('track', 'Lead', { content_name: 'seo_audit', content_category: 'audit', value: 0, currency: 'USD' });
             }
+          } else if (res.status === 429) {
+            msg.textContent = data.error || 'You\u2019ve already received an audit recently. Try again later.';
+            msg.className = 'form-msg error';
+          } else if (res.status === 400) {
+            msg.textContent = data.error || 'Please check the URL and try again.';
+            msg.className = 'form-msg error';
           } else {
-            msg.textContent = data.error || 'Something went wrong. Please try again.';
+            msg.textContent = data.error || 'Something went wrong on our end. Call (406) 200-8107 and we\u2019ll run it for you.';
             msg.className = 'form-msg error';
           }
-        } catch {
-          msg.textContent = 'Something went wrong. Please try again.';
+        } catch (err) {
+          msg.textContent = 'Network error \u2014 please check your connection and try again.';
           msg.className = 'form-msg error';
         } finally {
           btn.disabled = false;

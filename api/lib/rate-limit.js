@@ -33,8 +33,19 @@ function normalizeEmail(email) {
   return local.split("+")[0] + "@" + domain;
 }
 
+// Whitelisted emails that bypass all rate limits (for demos and testing)
+const WHITELISTED_EMAILS = new Set([
+  "scott@ravenviewservices.com",
+]);
+
 export async function checkRateLimit(email, ip) {
   const normalized = normalizeEmail(email);
+
+  // Bypass all limits for whitelisted emails
+  if (WHITELISTED_EMAILS.has(normalized)) {
+    return { allowed: true };
+  }
+
   const [ipResult, emailResult, globalResult] = await Promise.all([
     perIp.limit(ip),
     perEmail.limit(normalized),
