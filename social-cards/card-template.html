@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media Cards — missoula.business</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #111; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; padding: 2rem; display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; }
+
+    .card {
+      width: 1080px;
+      height: 1080px;
+      position: relative;
+      overflow: hidden;
+      flex-shrink: 0;
+      transform: scale(0.45);
+      transform-origin: top left;
+      margin-bottom: -594px;
+      margin-right: -594px;
+    }
+
+    /* Card 1: The "Still doing it manually?" card */
+    .card-1 {
+      background: #0a0a0a;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 80px;
+      text-align: center;
+    }
+    .card-1 .topline {
+      font-size: 32px;
+      color: #666;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      margin-bottom: 40px;
+    }
+    .card-1 h2 {
+      font-size: 72px;
+      font-weight: 800;
+      color: #fafafa;
+      line-height: 1.1;
+      margin-bottom: 50px;
+      letter-spacing: -2px;
+    }
+    .card-1 h2 em {
+      font-style: normal;
+      color: #3b82f6;
+    }
+    .card-1 .stats {
+      display: flex;
+      gap: 60px;
+      margin-bottom: 60px;
+    }
+    .card-1 .stat-item {
+      text-align: center;
+    }
+    .card-1 .stat-num {
+      font-size: 64px;
+      font-weight: 800;
+      color: #22c55e;
+      display: block;
+    }
+    .card-1 .stat-desc {
+      font-size: 22px;
+      color: #888;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    .card-1 .cta {
+      font-size: 28px;
+      color: #888;
+      border-top: 1px solid #333;
+      padding-top: 40px;
+      width: 100%;
+    }
+    .card-1 .cta strong {
+      color: #fafafa;
+    }
+
+    /* Card 2: "Your competitor at 9pm" split card */
+    .card-2 {
+      background: #0a0a0a;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .card-2 .side {
+      padding: 60px 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .card-2 .side-left {
+      background: #1a0a0a;
+      border-right: 3px solid #333;
+    }
+    .card-2 .side-right {
+      background: #0a1a0a;
+    }
+    .card-2 .side-label {
+      font-size: 24px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 40px;
+      font-weight: 700;
+    }
+    .card-2 .side-left .side-label { color: #ef4444; }
+    .card-2 .side-right .side-label { color: #22c55e; }
+    .card-2 .side ul {
+      list-style: none;
+      padding: 0;
+    }
+    .card-2 .side li {
+      font-size: 30px;
+      color: #ccc;
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      line-height: 1.4;
+    }
+    .card-2 .side li:last-child { border-bottom: none; }
+    .card-2 .bottom-bar {
+      grid-column: 1 / -1;
+      background: #111;
+      padding: 30px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .card-2 .bottom-bar .brand {
+      font-size: 28px;
+      font-weight: 700;
+      color: #fafafa;
+    }
+    .card-2 .bottom-bar .brand span { color: #666; }
+    .card-2 .bottom-bar .tagline {
+      font-size: 22px;
+      color: #666;
+    }
+
+    /* Card 3: Big stat card */
+    .card-3 {
+      background: linear-gradient(135deg, #0a0a0a 0%, #1e3a5f 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 80px;
+      text-align: center;
+    }
+    .card-3 .big-num {
+      font-size: 200px;
+      font-weight: 900;
+      color: #3b82f6;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+    .card-3 .big-label {
+      font-size: 42px;
+      color: #fafafa;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+    .card-3 .explanation {
+      font-size: 32px;
+      color: #aaa;
+      line-height: 1.5;
+      max-width: 800px;
+      margin-bottom: 60px;
+    }
+    .card-3 .cta-box {
+      padding: 24px 60px;
+      border: 2px solid #3b82f6;
+      font-size: 28px;
+      color: #fafafa;
+      font-weight: 600;
+    }
+
+    /* Card 4: Quote/Meme style */
+    .card-4 {
+      background: #0a0a0a;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 100px;
+    }
+    .card-4 .setup {
+      font-size: 36px;
+      color: #666;
+      margin-bottom: 30px;
+      line-height: 1.5;
+    }
+    .card-4 .punchline {
+      font-size: 56px;
+      font-weight: 800;
+      color: #fafafa;
+      line-height: 1.2;
+      margin-bottom: 50px;
+    }
+    .card-4 .punchline em {
+      font-style: normal;
+      color: #22c55e;
+    }
+    .card-4 .subtext {
+      font-size: 28px;
+      color: #666;
+      border-top: 1px solid #333;
+      padding-top: 40px;
+    }
+    .card-4 .subtext strong { color: #fafafa; }
+
+    /* Card 5: Problem list */
+    .card-5 {
+      background: #0a0a0a;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 80px;
+    }
+    .card-5 h2 {
+      font-size: 48px;
+      font-weight: 800;
+      color: #fafafa;
+      margin-bottom: 50px;
+      line-height: 1.2;
+    }
+    .card-5 .checklist {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 50px;
+    }
+    .card-5 .checklist li {
+      font-size: 34px;
+      color: #ccc;
+      padding: 16px 0;
+      padding-left: 50px;
+      position: relative;
+      border-bottom: 1px solid #1e1e1e;
+    }
+    .card-5 .checklist li::before {
+      content: "\2610";
+      position: absolute;
+      left: 0;
+      color: #ef4444;
+      font-size: 30px;
+    }
+    .card-5 .checklist li:last-child { border-bottom: none; }
+    .card-5 .bottom {
+      font-size: 30px;
+      color: #3b82f6;
+      font-weight: 600;
+    }
+
+    /* Card 6: Testimonial card */
+    .card-6 {
+      background: #0a0a0a;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 100px;
+    }
+    .card-6 .quote-mark {
+      font-size: 120px;
+      color: #3b82f6;
+      line-height: 0.8;
+      margin-bottom: 20px;
+    }
+    .card-6 blockquote {
+      font-size: 44px;
+      color: #fafafa;
+      line-height: 1.4;
+      font-style: italic;
+      margin-bottom: 50px;
+    }
+    .card-6 .attribution {
+      font-size: 26px;
+      color: #888;
+    }
+    .card-6 .result-tag {
+      margin-top: 40px;
+      display: inline-block;
+      padding: 12px 30px;
+      background: rgba(34,197,94,0.1);
+      border: 1px solid rgba(34,197,94,0.3);
+      color: #22c55e;
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    /* Card 7: "What if" card */
+    .card-7 {
+      background: linear-gradient(180deg, #0a0a0a 0%, #0a1a0a 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 100px;
+      text-align: center;
+    }
+    .card-7 .what-if {
+      font-size: 32px;
+      color: #666;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      margin-bottom: 40px;
+    }
+    .card-7 h2 {
+      font-size: 58px;
+      font-weight: 800;
+      color: #fafafa;
+      line-height: 1.2;
+      margin-bottom: 50px;
+    }
+    .card-7 .scenarios {
+      list-style: none;
+      padding: 0;
+      text-align: left;
+      max-width: 750px;
+      margin: 0 auto 50px;
+    }
+    .card-7 .scenarios li {
+      font-size: 32px;
+      color: #aaa;
+      padding: 14px 0 14px 45px;
+      position: relative;
+    }
+    .card-7 .scenarios li::before {
+      content: ">";
+      position: absolute;
+      left: 0;
+      color: #22c55e;
+      font-weight: 800;
+      font-size: 30px;
+    }
+    .card-7 .brand-cta {
+      font-size: 26px;
+      color: #666;
+    }
+    .card-7 .brand-cta strong { color: #fafafa; }
+
+    /* Card 8: Industry-specific */
+    .card-8 {
+      background: #0a0a0a;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 80px;
+    }
+    .card-8 .industry-tag {
+      font-size: 24px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: #3b82f6;
+      margin-bottom: 30px;
+      font-weight: 600;
+    }
+    .card-8 h2 {
+      font-size: 52px;
+      font-weight: 800;
+      color: #fafafa;
+      line-height: 1.2;
+      margin-bottom: 40px;
+    }
+    .card-8 .workflow {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 40px;
+    }
+    .card-8 .workflow li {
+      font-size: 28px;
+      color: #ccc;
+      padding: 16px 0 16px 40px;
+      position: relative;
+      border-left: 2px solid #3b82f6;
+      margin-left: 15px;
+    }
+    .card-8 .workflow li::before {
+      content: "";
+      position: absolute;
+      left: -7px;
+      top: 22px;
+      width: 12px;
+      height: 12px;
+      background: #3b82f6;
+      border-radius: 50%;
+    }
+    .card-8 .time-saved {
+      font-size: 36px;
+      font-weight: 700;
+      color: #22c55e;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Card 1: Still doing it manually? -->
+<div class="card card-1">
+  <div class="topline">Missoula Business Owners</div>
+  <h2>Still posting to<br>social media <em>manually?</em></h2>
+  <div class="stats">
+    <div class="stat-item">
+      <span class="stat-num">5hrs</span>
+      <span class="stat-desc">Per Week</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">260hrs</span>
+      <span class="stat-desc">Per Year</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">30min</span>
+      <span class="stat-desc">With AI</span>
+    </div>
+  </div>
+  <div class="cta"><strong>missoula.business</strong> — Free SEO audit. Real results.</div>
+</div>
+
+<!-- Card 2: You at 9pm vs. Your competitor at 9pm -->
+<div class="card card-2">
+  <div class="side side-left">
+    <div class="side-label">You at 9pm</div>
+    <ul>
+      <li>Writing tomorrow's Instagram post</li>
+      <li>Answering emails you forgot about</li>
+      <li>Updating the spreadsheet</li>
+      <li>Googling "how to do SEO"</li>
+      <li>Wondering why you started a business</li>
+    </ul>
+  </div>
+  <div class="side side-right">
+    <div class="side-label">Your competitor at 9pm</div>
+    <ul>
+      <li>Social media posted automatically</li>
+      <li>AI responded to every inquiry</li>
+      <li>Reports generated themselves</li>
+      <li>SEO running on autopilot</li>
+      <li>Actually relaxing</li>
+    </ul>
+  </div>
+  <div class="bottom-bar">
+    <div class="brand">missoula<span>.business</span></div>
+    <div class="tagline">AI that works while you don't have to.</div>
+  </div>
+</div>
+
+<!-- Card 3: 46% stat card -->
+<div class="card card-3">
+  <div class="big-num">46%</div>
+  <div class="big-label">of Google searches are local</div>
+  <div class="explanation">Half of everyone searching right now wants a business like yours. Are they finding you — or someone else?</div>
+  <div class="cta-box">Free SEO audit at missoula.business</div>
+</div>
+
+<!-- Card 4: Quote meme -->
+<div class="card card-4">
+  <div class="setup">A Missoula business owner told me:</div>
+  <div class="punchline">"I spend more time on marketing than on <em>actual work</em>."</div>
+  <div class="subtext">We fixed that. AI now handles her content calendar, social posts, and email campaigns. She reviews everything in <strong>30 minutes a week</strong>.<br><br><strong>missoula.business</strong></div>
+</div>
+
+<!-- Card 5: Checklist -->
+<div class="card card-5">
+  <h2>How many of these are<br>eating your week?</h2>
+  <ul class="checklist">
+    <li>Writing social media posts</li>
+    <li>Following up with leads manually</li>
+    <li>Sending invoices by hand</li>
+    <li>Responding to the same questions over and over</li>
+    <li>Updating spreadsheets</li>
+    <li>Trying to figure out your SEO</li>
+  </ul>
+  <div class="bottom">AI can handle all of them. Seriously.<br>missoula.business</div>
+</div>
+
+<!-- Card 6: Testimonial -->
+<div class="card card-6">
+  <div class="quote-mark">"</div>
+  <blockquote>Scott has a rare ability to bridge the gap between an idea and the final product.</blockquote>
+  <div class="attribution">— Lowell Greene, TechFix / ATG</div>
+  <div class="result-tag">2x engagement | 10 hours saved weekly | Built in 2 weeks</div>
+</div>
+
+<!-- Card 7: What if -->
+<div class="card card-7">
+  <div class="what-if">What if...</div>
+  <h2>Every lead got a response<br>in under 60 seconds?</h2>
+  <ul class="scenarios">
+    <li>Instant personalized reply to every inquiry</li>
+    <li>Automatic appointment booking</li>
+    <li>Follow-up sequences that never forget</li>
+    <li>24/7 — even when you're sleeping</li>
+  </ul>
+  <div class="brand-cta"><strong>missoula.business</strong> — AI agents for local businesses</div>
+</div>
+
+<!-- Card 8: Restaurant-specific -->
+<div class="card card-8">
+  <div class="industry-tag">Missoula Restaurants</div>
+  <h2>What if your reviews answered themselves?</h2>
+  <ul class="workflow">
+    <li>Customer leaves a Google review</li>
+    <li>AI drafts a personalized response</li>
+    <li>Posts automatically within hours</li>
+    <li>Negative reviews flagged for your attention</li>
+  </ul>
+  <div class="time-saved">Save 3+ hours/week on review management alone</div>
+</div>
+
+</body>
+</html>

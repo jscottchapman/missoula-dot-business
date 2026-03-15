@@ -14,5 +14,10 @@
         { "key": "Content-Type", "value": "text/plain; charset=utf-8" }
       ]
     }
-  ]
+  ],
+  "functions": {
+    "api/audit.js": {
+      "maxDuration": 60
+    }
+  }
 }

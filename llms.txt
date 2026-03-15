@@ -1,6 +1,6 @@
 # Missoula.business
 
-> AI and automation consulting for small businesses in Missoula, Montana and surrounding areas.
+> AI-powered automation and custom software for small businesses in Missoula, Montana. We build AI workflows that save local businesses 10-20 hours per week.
 
 ## About
 
@@ -10,53 +10,55 @@ We help local businesses leverage artificial intelligence and automation to elim
 
 ## Services
 
-- Marketing & Social Media: Content calendars, social posts, email campaigns — planned and drafted by AI so you can focus on running your business.
-- Competitor & Market Research: Know what your competitors are doing, what customers are saying, and where the opportunities are — without spending hours digging.
-- Daily Operations: Scheduling, invoicing, follow-ups, data entry — automate the repetitive tasks that eat every small business owner's day.
-- Business Planning & Strategy: Product strategy, financial modeling, pricing analysis — AI-powered tools that help you make better decisions faster.
-- Website & Online Presence: Get a professional website up fast, improve your SEO, and make sure customers can find you online.
-- Custom Software Development: Building tailored applications when off-the-shelf solutions fall short — from simple tools to full platforms.
+- Marketing Automation: AI-powered content calendars, social media posts, email campaigns, and ad copy — all in your brand voice. Clients go from 5+ hours/week on marketing to 30 minutes.
+- AI Customer Agents: Custom AI agents that handle inquiries, qualify leads, book appointments, and follow up — 24/7, no hiring required.
+- Competitor Intelligence: Automated tracking of competitor pricing, ads, reviews, and market moves. Weekly reports delivered to your inbox.
+- Operations Automation: Scheduling, invoicing, data entry, document processing, inventory — automate the repetitive tasks that eat your day.
+- Website & SEO: Fast, professional websites optimized for search engines, AI assistants, and local customers.
+- Custom Software Development: Building tailored applications when off-the-shelf solutions fall short — from dashboards to full platforms.
 
-## Free Business Audit
+## Free SEO Audit
 
-Every engagement starts with a free business audit. We research your competitors, analyze your online presence, and show you exactly where automation can save you time and money. No commitment required.
+Enter your website URL at missoula.business and get an instant AI-powered SEO, GEO (Generative Engine Optimization), and AEO (Answer Engine Optimization) audit emailed to you. We analyze your meta tags, structured data, content, local SEO, social readiness, AI/LLM readiness, mobile performance, and E-E-A-T signals.
 
-## Case Study: Tech Fix SMS Platform
+## Industries Served
 
-An automotive training company was struggling with student engagement between assessments. Their team was stretched thin sending manual reminders, with no way to personalize outreach or track what worked.
+- Restaurants & Hospitality: Automated review responses, reservation follow-ups, social media content, customer loyalty
+- Contractors & Trades: Automated estimate follow-ups, job scheduling, invoice generation, review requests
+- Professional Services: Client intake automation, document processing, appointment scheduling, reporting
+- Retail & E-Commerce: Inventory alerts, product descriptions, email marketing, social showcases
+- Healthcare & Wellness: Patient intake, appointment reminders, follow-up care, HIPAA-conscious workflows
+- Outdoor & Recreation: Booking automation, weather-triggered marketing, guide scheduling
 
-J Scott Chapman built an automated SMS platform that analyzed each student's assessment scores, identified their weakest areas, and sent personalized daily training links — no manual effort required.
+## Pricing
 
-Results:
-- 2x student engagement (doubled compared to control group)
-- 98% SMS delivery rate
-- 10 hours saved per week in admin time
-- 2 weeks from concept to launch
+- Quick Wins ($500-$2,000): Single automations — social media posting, email follow-ups, booking automation, chatbot setup
+- Growth Engine ($2,000-$5,000): Connected workflows — full marketing pipeline, custom AI agent, competitor dashboard, CRM integration, website + SEO
+- Custom Platform ($5,000+): Full-stack software — AI agent orchestration, multi-system integration, payment processing, real-time dashboards
+
+## Case Study: Automated SMS Platform
+
+An automotive training company was struggling with student engagement between assessments. We built an AI-powered SMS platform that analyzed each student's scores, identified weak areas, and sent personalized daily training links — fully automated.
+
+Results: 2x engagement, 98% delivery rate, 10 hours saved weekly, concept to launch in 2 weeks.
 
 > "Scott has a rare ability to bridge the gap between an idea and the final product. His contributions were instrumental to the success of our program." — Lowell Greene, TechFix / ATG
 
+## Case Study: AI Agent Orchestration Platform
+
+Built an agentic AI platform for hospitality where a single user input triggers a chain of AI-orchestrated actions: restaurant search, budget framing, note composition, Stripe virtual card issuance, and real-time restaurant notification. 5 integrated APIs, under 30 seconds end-to-end, zero manual steps, built in 8 days.
+
 ## Approach
 
-1. Conversation — Understand the business, its pain points, and goals.
-2. Diagnosis — Map workflows and identify highest-impact opportunities.
-3. Solution — Build, deploy, and train your team.
-4. Results — Measure time saved, errors eliminated, and revenue gained.
-
-## Who This Is For
-
-Any Missoula-area small business dealing with:
-- Repetitive manual tasks consuming staff time
-- Social media and marketing that never gets done
-- No clear strategy for using AI or automation
-- A desire to use technology for competitive advantage
-- Needing a professional website or better online presence
-
-Industries served include restaurants, retail, professional services, construction, healthcare, and more.
+1. Free call (15 min) — Tell us what's eating your time
+2. Workflow audit — We map processes and show where tech saves hours, with projected ROI
+3. Build & deploy — Working results within the first week
+4. Measure & optimize — Track time saved, leads captured, revenue gained
 
 ## Contact
 
+- Phone: (406) 200-8107
 - Email: scott@ravenviewservices.com
-- Phone: +1-864-247-3890
 - Location: Missoula, Montana
 - Website: https://missoula.business
 - LinkedIn: https://www.linkedin.com/in/rvnvw/
@@ -64,20 +66,17 @@ Industries served include restaurants, retail, professional services, constructi
 
 ## FAQ
 
-Q: Can AI help with social media and marketing for my small business?
-A: Absolutely. AI can draft social media posts, plan content calendars, write email campaigns, and analyze what your competitors are doing — saving hours every week.
-
-Q: How can AI help a small business in Missoula?
-A: AI can automate daily tasks like scheduling, invoicing, and follow-ups. It can research competitors, draft marketing content, plan business strategy, build websites, and analyze data. We offer a free business audit to show you exactly where AI can save you time and money.
-
-Q: Do I need to understand AI to work with you?
-A: No. We take a business-first approach — we understand your challenges, then handle the technology.
+Q: How can AI help my small business in Missoula?
+A: AI can automate repetitive tasks like scheduling, invoicing, follow-ups, and social media posting — saving 10-20 hours per week. It can also draft marketing content, respond to customer inquiries 24/7, analyze competitors, and generate leads.
 
 Q: What does it cost?
-A: Every engagement starts with a free business audit. Solutions are scoped to your needs and budget, always targeting measurable ROI.
+A: Quick automations start at $500-2,000. Full workflow builds run $2,000-5,000. Custom platforms are $5,000+. Every engagement starts with a free conversation. ROI within the first month.
+
+Q: Do I need to understand AI?
+A: No. We start by understanding your business, not explaining technology. You tell us what's costing you time; we handle everything else.
 
 Q: How long does a project take?
-A: Some automations deliver in days. Larger custom builds run weeks to a few months, with iterative delivery so you see results early.
+A: Simple automations ship in 3-5 days. Larger builds take 2-6 weeks. Working results within the first week.
 
-Q: What's the difference between this and hiring an IT company?
-A: IT companies keep your systems running. We make your business run better — turning manual processes into competitive advantages using AI and automation.
+Q: Can you automate my social media and marketing?
+A: Yes. We set up AI-powered content pipelines that draft social posts, schedule them across platforms, write email campaigns, and track performance. Most clients go from 5+ hours/week to under 30 minutes.
