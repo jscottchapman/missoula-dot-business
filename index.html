@@ -364,7 +364,7 @@
     .audit-form{max-width:480px;margin:0 auto}
     .audit-form .form-row{display:flex;flex-direction:column;gap:0.75rem;margin-bottom:0.75rem}
     @media(min-width:540px){.audit-form .form-row{flex-direction:row}}
-    .audit-form input[type="url"],
+    .audit-form input[type="text"].website-input,
     .audit-form input[type="email"]{flex:1;padding:0.8rem 1rem;font-size:0.95rem;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.05);color:var(--white);font-family:inherit;outline:none;transition:border-color 0.2s}
     .audit-form input:focus{border-color:var(--accent)}
     .audit-form input::placeholder{color:#555}
@@ -773,7 +773,7 @@
       <p>Right now, someone in Missoula is searching for what you sell. Will they find you — or the business down the street? Enter your website and find out in 2 minutes.</p>
       <form class="audit-form" id="hero-audit-form" aria-label="Free SEO audit">
         <div class="form-row">
-          <input type="url" name="website" placeholder="yourwebsite.com" required aria-label="Website URL">
+          <input type="text" name="website" class="website-input" placeholder="yourwebsite.com" required aria-label="Website URL">
           <input type="email" name="email" placeholder="you@email.com" required aria-label="Email address">
         </div>
         <input type="text" name="_honeypot" class="audit-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
@@ -795,9 +795,17 @@
         var honeypot = form.querySelector('input[name="_honeypot"]');
 
         var website = websiteInput.value.trim();
-        if (website && !website.match(/^https?:\/\//)) {
-          website = 'https://' + website;
+        // Strip any leading protocol or www if user typed it
+        website = website.replace(/^(https?:\/\/)?(www\.)?/, '');
+        // Basic domain validation
+        if (!website || !website.includes('.')) {
+          msg.textContent = 'Please enter a valid domain (e.g., yourbusiness.com)';
+          msg.className = 'form-msg error';
+          btn.disabled = false;
+          return;
         }
+        // Always prepend https://
+        website = 'https://' + website;
 
         btn.disabled = true;
         btn.textContent = 'Analyzing your site...';
