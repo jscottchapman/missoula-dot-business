@@ -184,6 +184,19 @@
   }
   </script>
 
+  <!-- Meta Pixel — replace META_PIXEL_ID with your actual pixel ID from Events Manager -->
+  <!-- To get your Pixel ID: business.facebook.com → All Tools → Events Manager → Connect Data Sources → Web → Meta Pixel -->
+  <script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', 'META_PIXEL_ID');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=META_PIXEL_ID&ev=PageView&noscript=1"/></noscript>
+
   <!-- Sentry Browser SDK -->
   <script src="https://browser.sentry-cdn.com/9.17.0/bundle.min.js" crossorigin="anonymous"></script>
   <script>
@@ -808,9 +821,17 @@
             msg.textContent = 'Check your inbox! Your audit results are on the way.';
             msg.className = 'form-msg success';
             form.reset();
-            // Track conversion
+            // Track conversions
             if (typeof gtag === 'function') {
               gtag('event', 'audit_submit', { event_category: 'lead', event_label: website });
+            }
+            if (typeof fbq === 'function') {
+              fbq('track', 'Lead', {
+                content_name: 'seo_audit',
+                content_category: 'audit',
+                value: 0,
+                currency: 'USD'
+              });
             }
           } else {
             msg.textContent = data.error || 'Something went wrong. Please try again.';
