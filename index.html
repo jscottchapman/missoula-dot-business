@@ -51,6 +51,7 @@
       "@type": "Person",
       "name": "J Scott Chapman",
       "jobTitle": "AI & Automation Consultant",
+      "image": "https://missoula.business/scott-chapman-headshot-400.png",
       "sameAs": "https://www.linkedin.com/in/rvnvw/"
     },
     "areaServed": [
@@ -335,6 +336,8 @@
     @media(min-width:640px){.about-layout{grid-template-columns:2fr 1fr}}
     .about-text p{color:var(--gray);font-size:0.95rem;margin-bottom:1rem;line-height:1.6}
     .about-text strong{color:var(--white)}
+    .about-sidebar{display:grid;gap:1.5rem}
+    .about-headshot{width:100%;max-width:280px;margin:0 auto;border-radius:0.5rem;aspect-ratio:1/1;object-fit:cover}
     .about-stats{display:grid;gap:1rem}
     .about-stat{background:var(--mid-gray);padding:1rem;text-align:center}
     .about-stat .stat-number{font-size:1.25rem;font-weight:800;color:var(--white)}
@@ -704,18 +707,21 @@
           <p>That means a business-first approach — understanding your challenges before writing a single line of code. No jargon, no over-engineering. Just practical technology that delivers measurable results: time saved, leads captured, revenue gained.</p>
           <p>Every engagement starts with a free conversation. If AI isn't the right fit for your problem, he'll tell you that too.</p>
         </div>
-        <div class="about-stats">
-          <div class="about-stat">
-            <span class="stat-number">10+</span>
-            <span class="stat-label">Years building software</span>
-          </div>
-          <div class="about-stat">
-            <span class="stat-number">Days</span>
-            <span class="stat-label">Not months to deliver</span>
-          </div>
-          <div class="about-stat">
-            <span class="stat-number">Missoula</span>
-            <span class="stat-label">Based & committed</span>
+        <div class="about-sidebar">
+          <img src="scott-chapman-headshot-400.png" alt="J Scott Chapman — AI and automation consultant based in Missoula, Montana" class="about-headshot" width="400" height="400" loading="lazy">
+          <div class="about-stats">
+            <div class="about-stat">
+              <span class="stat-number">10+</span>
+              <span class="stat-label">Years building software</span>
+            </div>
+            <div class="about-stat">
+              <span class="stat-number">Days</span>
+              <span class="stat-label">Not months to deliver</span>
+            </div>
+            <div class="about-stat">
+              <span class="stat-number">Missoula</span>
+              <span class="stat-label">Based & committed</span>
+            </div>
           </div>
         </div>
       </div>
