@@ -4,7 +4,7 @@ import { buildAuditEmail, buildNotificationEmail } from "./email-templates.js";
 let client;
 function getClient() {
   if (!client) {
-    client = new MailtrapClient({ token: process.env.MAILTRAP_API_KEY });
+    client = new MailtrapClient({ token: (process.env.MAILTRAP_API_KEY || "").trim() });
   }
   return client;
 }

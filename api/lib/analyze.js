@@ -7,10 +7,10 @@ function getClient() {
   if (!client) {
     const opts = {};
     if (process.env.NGROK_AI_GATEWAY_URL) {
-      opts.baseURL = process.env.NGROK_AI_GATEWAY_URL;
-      opts.apiKey = process.env.NGROK_AI_GATEWAY_KEY;
+      opts.baseURL = process.env.NGROK_AI_GATEWAY_URL.trim();
+      opts.apiKey = (process.env.NGROK_AI_GATEWAY_KEY || "").trim();
     } else if (process.env.ANTHROPIC_API_KEY) {
-      opts.apiKey = process.env.ANTHROPIC_API_KEY;
+      opts.apiKey = process.env.ANTHROPIC_API_KEY.trim();
     }
     client = new Anthropic(opts);
   }

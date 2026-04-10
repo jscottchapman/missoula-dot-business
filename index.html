@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Missoula.business — AI-Powered Automation for Missoula Businesses</title>
-  <meta name="description" content="AI workflows that save Missoula businesses 10-20 hours per week. Automated marketing, customer follow-ups, scheduling, and custom software. Free SEO audit. Work with J Scott Chapman.">
+  <meta name="description" content="You didn't start a business to fight with software. AI handles marketing, follow-ups, and data entry so you can do the work that matters. Free 15-minute call. Work with J Scott Chapman in Missoula, MT.">
   <meta name="keywords" content="AI consulting Missoula, business automation Montana, artificial intelligence Missoula MT, technology consulting, workflow automation, custom software Missoula, social media automation, marketing automation small business, business planning AI, competitor research AI, website development Missoula, small business automation Montana, AI agent development, chatbot Missoula, restaurant automation Montana, trades business automation">
   <meta name="author" content="J Scott Chapman">
   <meta name="robots" content="index, follow">
@@ -185,8 +185,9 @@
   }
   </script>
 
-  <!-- Meta Pixel — replace META_PIXEL_ID with your actual pixel ID from Events Manager -->
-  <!-- To get your Pixel ID: business.facebook.com → All Tools → Events Manager → Connect Data Sources → Web → Meta Pixel -->
+  <!-- Meta Pixel — uncomment and replace META_PIXEL_ID when you have your actual pixel ID -->
+  <!-- Get your Pixel ID: business.facebook.com → All Tools → Events Manager → Connect Data Sources → Web → Meta Pixel -->
+  <!--
   <script>
   !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
   n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
@@ -196,7 +197,8 @@
   fbq('init', 'META_PIXEL_ID');
   fbq('track', 'PageView');
   </script>
-  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=META_PIXEL_ID&ev=PageView&noscript=1"/></noscript>
+  <noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=META_PIXEL_ID&ev=PageView&noscript=1"/></noscript>
+  -->
 
   <!-- Sentry Browser SDK -->
   <script src="https://browser.sentry-cdn.com/9.17.0/bundle.min.js" crossorigin="anonymous"></script>
@@ -232,11 +234,11 @@
     .logo{font-size:1.125rem;font-weight:700;letter-spacing:0.02em}
     .logo span{color:var(--gray)}
     .nav-links{display:flex;gap:1.5rem;align-items:center}
-    .nav-links a{color:var(--gray);text-decoration:none;font-size:0.9rem;transition:color 0.2s}
+    .nav-links a{color:var(--gray);text-decoration:none;font-size:0.9rem;transition:color 0.2s;padding:0.5rem 0}
     .nav-links a:hover{color:var(--white)}
-    .nav-cta{padding:0.5rem 1.25rem;background:var(--white);color:var(--black);font-weight:600;font-size:0.85rem;text-decoration:none;transition:background 0.2s}
-    .nav-cta:hover{background:var(--light-gray);color:var(--black)}
-    .mobile-menu{display:none;background:none;border:none;color:var(--white);font-size:1.5rem;cursor:pointer}
+    .nav-cta{padding:0.75rem 1.25rem;background:transparent;color:var(--gray);font-weight:600;font-size:0.875rem;text-decoration:none;border:1px solid var(--mid-gray);transition:border-color 0.2s,color 0.2s}
+    .nav-cta:hover{border-color:var(--gray);color:var(--white)}
+    .mobile-menu{display:none;background:none;border:none;color:var(--white);font-size:1.5rem;cursor:pointer;min-width:44px;min-height:44px}
     @media(max-width:640px){
       .nav-links{display:none}
       .mobile-menu{display:block}
@@ -245,7 +247,7 @@
 
     /* Hero */
     .hero{padding:5rem 0 4rem;text-align:center}
-    .hero-badge{display:inline-block;padding:0.35rem 1rem;background:var(--accent-dim);color:var(--accent);font-size:0.8rem;font-weight:600;letter-spacing:0.04em;text-transform:uppercase;margin-bottom:1.5rem;border:1px solid rgba(59,130,246,0.3)}
+    .hero-badge{display:inline-block;padding:0.35rem 1rem;background:var(--accent-dim);color:#60a5fa;font-size:0.875rem;font-weight:600;letter-spacing:0.04em;text-transform:uppercase;margin-bottom:1.5rem;border:1px solid rgba(59,130,246,0.3)}
     .hero h1{font-size:clamp(2.25rem,5.5vw,3.25rem);font-weight:800;line-height:1.1;letter-spacing:-0.03em;margin-bottom:1.25rem}
     .hero h1 em{font-style:normal;color:var(--accent)}
     .hero .subtitle{font-size:clamp(1.05rem,2.5vw,1.2rem);color:var(--gray);max-width:580px;margin:0 auto 2rem;line-height:1.55}
@@ -254,7 +256,7 @@
     .cta-btn:hover{background:var(--light-gray);transform:translateY(-1px)}
     .cta-btn-outline{display:inline-block;padding:0.9rem 2.25rem;background:transparent;color:var(--white);font-size:1rem;font-weight:600;text-decoration:none;letter-spacing:0.01em;border:1px solid var(--mid-gray);transition:border-color 0.2s,transform 0.2s}
     .cta-btn-outline:hover{border-color:var(--gray);transform:translateY(-1px)}
-    .hero-proof{display:flex;gap:2rem;justify-content:center;flex-wrap:wrap;color:var(--gray);font-size:0.85rem}
+    .hero-proof{display:flex;gap:2rem;justify-content:center;flex-wrap:wrap;color:var(--gray);font-size:0.875rem}
     .hero-proof span{display:flex;align-items:center;gap:0.4rem}
     .hero-proof .check{color:var(--green);font-weight:700}
 
@@ -281,16 +283,16 @@
     .service-icon{font-size:1.5rem;margin-bottom:0.75rem;display:block}
     .service h3{font-size:1.05rem;font-weight:600;margin-bottom:0.4rem}
     .service p{color:var(--gray);font-size:0.9rem;line-height:1.5}
-    .service .example{margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid rgba(255,255,255,0.06);font-size:0.8rem;color:var(--accent)}
+    .service .example{margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid rgba(255,255,255,0.06);font-size:0.875rem;color:var(--accent)}
 
     /* Industry Examples */
     .industry-grid{display:grid;grid-template-columns:1fr;gap:1rem}
     @media(min-width:640px){.industry-grid{grid-template-columns:1fr 1fr 1fr}}
     .industry-card{padding:1.25rem;border:1px solid var(--mid-gray);transition:border-color 0.2s}
     .industry-card:hover{border-color:var(--accent)}
-    .industry-card h3{font-size:0.95rem;font-weight:600;margin-bottom:0.5rem}
+    .industry-card h3{font-size:1rem;font-weight:600;margin-bottom:0.5rem}
     .industry-card ul{list-style:none;padding:0}
-    .industry-card li{color:var(--gray);font-size:0.85rem;padding:0.2rem 0;padding-left:1.2rem;position:relative}
+    .industry-card li{color:var(--gray);font-size:0.875rem;padding:0.2rem 0;padding-left:1.2rem;position:relative}
     .industry-card li::before{content:">";position:absolute;left:0;color:var(--accent);font-weight:600}
 
     /* How It Works */
@@ -304,30 +306,30 @@
     /* Case Studies */
     .case-studies{display:grid;gap:2rem}
     .case-study{background:var(--mid-gray);padding:2rem;border:1px solid rgba(255,255,255,0.05)}
-    .case-study-label{font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);margin-bottom:0.75rem;display:inline-block;padding:0.2rem 0.6rem;background:var(--accent-dim);border:1px solid rgba(59,130,246,0.2)}
+    .case-study-label{font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#60a5fa;margin-bottom:0.75rem;display:inline-block;padding:0.2rem 0.6rem;background:var(--accent-dim);border:1px solid rgba(59,130,246,0.2)}
     .case-study h3{font-size:1.2rem;font-weight:700;margin-bottom:0.75rem}
     .case-study p{color:var(--gray);font-size:0.9rem;line-height:1.6;margin-bottom:0.75rem}
     .case-study-stats{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.5rem 0}
     .stat{text-align:center;padding:0.75rem;background:rgba(0,0,0,0.3)}
     .stat-number{font-size:1.5rem;font-weight:800;color:var(--white);display:block}
-    .stat-label{font-size:0.75rem;color:var(--gray);text-transform:uppercase;letter-spacing:0.05em}
+    .stat-label{font-size:0.8125rem;color:var(--gray);text-transform:uppercase;letter-spacing:0.05em}
     @media(min-width:540px){.case-study-stats{grid-template-columns:1fr 1fr 1fr 1fr}}
     .testimonial{border-left:2px solid var(--accent);padding-left:1.25rem;margin-top:1.5rem}
     .testimonial p{font-style:italic;color:var(--light-gray);margin-bottom:0.5rem;font-size:0.95rem}
-    .testimonial cite{font-size:0.85rem;color:var(--gray);font-style:normal}
+    .testimonial cite{font-size:0.875rem;color:var(--gray);font-style:normal}
 
     /* Pricing */
     .pricing-grid{display:grid;grid-template-columns:1fr;gap:1.5rem}
     @media(min-width:640px){.pricing-grid{grid-template-columns:1fr 1fr 1fr}}
     .price-card{background:var(--mid-gray);padding:1.75rem;border:1px solid rgba(255,255,255,0.05);display:flex;flex-direction:column}
     .price-card.featured{border-color:var(--accent);position:relative}
-    .price-card.featured::before{content:"Most Popular";position:absolute;top:-0.6rem;left:1.5rem;background:var(--accent);color:var(--white);font-size:0.7rem;font-weight:600;padding:0.15rem 0.75rem;letter-spacing:0.04em;text-transform:uppercase}
+    .price-card.featured::before{content:"Most Popular";position:absolute;top:-0.6rem;left:1.5rem;background:var(--accent);color:var(--white);font-size:0.75rem;font-weight:600;padding:0.15rem 0.75rem;letter-spacing:0.04em;text-transform:uppercase}
     .price-card h3{font-size:1.1rem;font-weight:700;margin-bottom:0.25rem}
     .price-card .price{font-size:1.5rem;font-weight:800;margin-bottom:0.25rem}
-    .price-card .price span{font-size:0.85rem;font-weight:400;color:var(--gray)}
-    .price-card .price-desc{color:var(--gray);font-size:0.85rem;margin-bottom:1rem;padding-bottom:1rem;border-bottom:1px solid rgba(255,255,255,0.06)}
+    .price-card .price span{font-size:0.875rem;font-weight:400;color:var(--gray)}
+    .price-card .price-desc{color:var(--gray);font-size:0.875rem;margin-bottom:1rem;padding-bottom:1rem;border-bottom:1px solid rgba(255,255,255,0.06)}
     .price-card ul{list-style:none;padding:0;margin-bottom:1.5rem;flex:1}
-    .price-card li{font-size:0.85rem;color:var(--gray);padding:0.3rem 0 0.3rem 1.2rem;position:relative}
+    .price-card li{font-size:0.875rem;color:var(--gray);padding:0.3rem 0 0.3rem 1.2rem;position:relative}
     .price-card li::before{content:"\2713";position:absolute;left:0;color:var(--green);font-weight:600}
     .price-card .cta-btn,.price-card .cta-btn-outline{text-align:center;font-size:0.9rem;padding:0.75rem 1.5rem}
 
@@ -341,7 +343,7 @@
     .about-stats{display:grid;gap:1rem}
     .about-stat{background:var(--mid-gray);padding:1rem;text-align:center}
     .about-stat .stat-number{font-size:1.25rem;font-weight:800;color:var(--white)}
-    .about-stat .stat-label{font-size:0.75rem;color:var(--gray);text-transform:uppercase;letter-spacing:0.05em}
+    .about-stat .stat-label{font-size:0.8125rem;color:var(--gray);text-transform:uppercase;letter-spacing:0.05em}
 
     /* FAQ */
     details{border-bottom:1px solid var(--mid-gray);padding:1rem 0}
@@ -370,7 +372,7 @@
     .audit-form input[type="text"].website-input,
     .audit-form input[type="email"]{flex:1;padding:0.8rem 1rem;font-size:0.95rem;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.05);color:var(--white);font-family:inherit;outline:none;transition:border-color 0.2s}
     .audit-form input:focus{border-color:var(--accent)}
-    .audit-form input::placeholder{color:#555}
+    .audit-form input::placeholder{color:#777}
     .audit-form button{width:100%;padding:0.9rem 2.5rem;background:var(--white);color:var(--black);font-size:1rem;font-weight:600;border:none;cursor:pointer;letter-spacing:0.01em;transition:background 0.2s,transform 0.2s;font-family:inherit}
     .audit-form button:hover{background:var(--light-gray);transform:translateY(-1px)}
     .audit-form button:disabled{opacity:0.6;cursor:not-allowed;transform:none}
@@ -378,16 +380,20 @@
     .audit-form .form-msg.success{color:var(--green)}
     .audit-form .form-msg.error{color:#ef4444}
     .audit-hp{position:absolute;left:-9999px;opacity:0;height:0;width:0;overflow:hidden}
-    .audit-note{margin-top:0.75rem;font-size:0.8rem;color:#555;text-align:center}
+    .audit-note{margin-top:0.75rem;font-size:0.875rem;color:#777;text-align:center}
+
+    /* Focus styles */
+    :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+    a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 
     /* Footer */
     footer{padding:2rem 0;border-top:1px solid var(--mid-gray)}
     .footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
-    footer p{color:var(--gray);font-size:0.85rem}
+    footer p{color:var(--gray);font-size:0.875rem}
     footer a{color:var(--gray);text-decoration:none}
     footer a:hover{color:var(--white)}
     .footer-contact{display:flex;gap:1.5rem;flex-wrap:wrap}
-    .footer-contact a{font-size:0.85rem}
+    .footer-contact a{font-size:0.875rem;padding:0.5rem 0}
   </style>
 </head>
 <body>
@@ -409,11 +415,11 @@
   <section class="hero">
     <div class="container">
       <div class="hero-badge">Missoula, Montana</div>
-      <h1>Your business runs on <em>your time</em>.<br>AI gives it back.</h1>
-      <p class="subtitle">Missoula businesses we work with save 10-20 hours a week by automating marketing, follow-ups, scheduling, and data entry. What would you do with an extra day every week?</p>
+      <h1>You didn't start a business to <em>fight with software</em>.</h1>
+      <p class="subtitle">AI handles the marketing, the follow-ups, the data entry. You get back to the work you actually started this thing for.</p>
       <div class="hero-actions">
-        <a href="#audit" class="cta-btn">Get Your Free SEO Audit</a>
-        <a href="tel:+14062008107" class="cta-btn-outline">Call Scott: (406) 200-8107</a>
+        <a href="https://timetuna.com/j-scott-chapman-2026" class="cta-btn" target="_blank" rel="noopener">Book a Free 15-Minute Call</a>
+        <a href="#audit" class="cta-btn-outline">Get Your Free SEO Audit</a>
       </div>
       <div class="hero-proof">
         <span><span class="check">&#10003;</span> Free 15-min consultation</span>
@@ -425,30 +431,53 @@
 
   <section id="problems">
     <div class="container">
-      <h2>Sound familiar?</h2>
-      <p class="section-subtitle">Every business owner in Missoula is dealing with at least one of these. Most are dealing with all four.</p>
+      <h2>You know that feeling.</h2>
+      <p class="section-subtitle">You spend hours every week on marketing, follow-ups, scheduling, and data entry. None of it grows your business. All of it has to get done.</p>
+      <p style="color:var(--gray);font-size:0.95rem;margin-bottom:1rem;max-width:540px">And you're starting to wonder if your competitors are already using AI. If they're getting more done with less. If you're falling behind while you're still doing everything by hand.</p>
+      <p style="color:var(--white);font-size:1rem;margin-bottom:2rem;max-width:540px;font-weight:600">Running a business shouldn't mean doing the job AND doing all the busywork around the job.</p>
       <div class="pain-grid">
         <div class="pain-card">
-          <h3>Marketing takes forever</h3>
-          <p class="before"><strong>Before:</strong> 5+ hours/week writing posts, emails, and content</p>
-          <p class="after"><strong>After:</strong> AI drafts everything in your brand voice. You review and approve in 30 min.</p>
+          <h3>Marketing eats your evenings</h3>
+          <p class="before">You're spending 5+ hours a week writing posts, emails, and content. It still doesn't feel like enough.</p>
         </div>
         <div class="pain-card">
-          <h3>Leads slip through the cracks</h3>
-          <p class="before"><strong>Before:</strong> Missed follow-ups, forgotten inquiries, lost revenue</p>
-          <p class="after"><strong>After:</strong> Every lead gets an instant, personalized response. Zero fall through.</p>
+          <h3>Leads disappear</h3>
+          <p class="before">You know people are reaching out. You know some fall through the cracks. You just don't have a system to catch them all.</p>
         </div>
         <div class="pain-card">
-          <h3>You can't find good help</h3>
-          <p class="before"><strong>Before:</strong> Hiring for tasks a machine should handle</p>
-          <p class="after"><strong>After:</strong> AI handles the busywork. Your team focuses on high-value work.</p>
+          <h3>You're hiring for tasks a machine should handle</h3>
+          <p class="before">Your team is smart. They shouldn't be doing data entry, scheduling, and copy-paste work all day.</p>
         </div>
         <div class="pain-card">
-          <h3>Your website is invisible</h3>
-          <p class="before"><strong>Before:</strong> Competitors outrank you. Customers can't find you online.</p>
-          <p class="after"><strong>After:</strong> Optimized for Google, AI search engines, and local directories.</p>
+          <h3>Customers can't find you online</h3>
+          <p class="before">Your competitors rank above you. People search for exactly what you offer and find someone else.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section id="guide">
+    <div class="container">
+      <h2>You don't need more tools. You need someone who gets it.</h2>
+      <p class="section-subtitle">I've worked with people stuck mid-build with code that only works sometimes. Training companies trying to keep students engaged between sessions. Founders who know AI could help but have no idea where to start. Most of them are in the same spot: they know they should be doing something different, they just don't know what.</p>
+      <div class="case-studies" style="margin-top:2rem">
+        <div class="testimonial">
+          <p>"Scott has a rare ability to bridge the gap between an idea and the final product. His contributions were instrumental to the success of our program."</p>
+          <cite>— Lowell Greene, TechFix / ATG</cite>
+        </div>
+        <div class="testimonial" style="margin-top:1.5rem">
+          <p>"Exceptionally reliable, skilled, and technically outstanding. His deliverables consistently required minimal to no adjustments."</p>
+          <cite>— Anastasiia Voznytsia, ForYourParty</cite>
+        </div>
+      </div>
+      <ul style="list-style:none;padding:0;margin-top:2rem;display:grid;gap:0.5rem">
+        <li style="color:var(--gray);font-size:0.9rem;padding-left:1.2rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:600">&#10003;</span> Built an SMS platform for a training company that doubled engagement, 98% delivery rate</li>
+        <li style="color:var(--gray);font-size:0.9rem;padding-left:1.2rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:600">&#10003;</span> Built a HIPAA-compliant healthcare platform with 850-1,000 3D exercise visualizations</li>
+        <li style="color:var(--gray);font-size:0.9rem;padding-left:1.2rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:600">&#10003;</span> Built a clinical visualization app for a continuous glucose monitor, BLE sensor to clinician dashboard</li>
+        <li style="color:var(--gray);font-size:0.9rem;padding-left:1.2rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:600">&#10003;</span> Co-presented a free talk at Missoula Public Library, live-built a website from a spoken prompt</li>
+        <li style="color:var(--gray);font-size:0.9rem;padding-left:1.2rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:600">&#10003;</span> JavaScript instructor, conference speaker, 4 AWS ML/AI certifications</li>
+        <li style="color:var(--gray);font-size:0.9rem;padding-left:1.2rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:600">&#10003;</span> 10+ years building software. Based in Missoula.</li>
+      </ul>
     </div>
   </section>
 
@@ -460,13 +489,13 @@
         <div class="service">
           <span class="service-icon" aria-hidden="true">&#9993;</span>
           <h3>Marketing Automation</h3>
-          <p>AI-powered content calendars, social media posts, email campaigns, and ad copy — all in your brand voice.</p>
+          <p>AI writes your posts, emails, and content in your voice. Schedules it. Tracks what works. You spend 30 minutes reviewing what used to take 5 hours.</p>
           <div class="example">Example: Auto-post to Instagram, Facebook, and Google Business 3x/week</div>
         </div>
         <div class="service">
           <span class="service-icon" aria-hidden="true">&#9889;</span>
           <h3>AI Customer Agents</h3>
-          <p>Custom AI agents that handle inquiries, qualify leads, book appointments, and follow up — 24/7, no hiring required.</p>
+          <p>Answers inquiries, qualifies leads, books appointments, follows up. Runs 24/7. You don't need to hire for it.</p>
           <div class="example">Example: AI receptionist that books and confirms appointments via text</div>
         </div>
         <div class="service">
@@ -478,7 +507,7 @@
         <div class="service">
           <span class="service-icon" aria-hidden="true">&#9881;</span>
           <h3>Operations Automation</h3>
-          <p>Scheduling, invoicing, data entry, document processing, inventory — automate the tasks that eat your day.</p>
+          <p>Scheduling, invoicing, data entry, document processing. If you do it manually and repeatedly, it can probably be automated.</p>
           <div class="example">Example: Auto-generate and send invoices when a job is marked complete</div>
         </div>
         <div class="service">
@@ -490,7 +519,7 @@
         <div class="service">
           <span class="service-icon" aria-hidden="true">&#128187;</span>
           <h3>Custom Software</h3>
-          <p>When off-the-shelf doesn't cut it, we build exactly what your operation needs — from dashboards to full platforms.</p>
+          <p>When off-the-shelf doesn't fit, I build what your operation actually needs.</p>
           <div class="example">Example: Custom booking platform with automated SMS confirmations</div>
         </div>
       </div>
@@ -562,39 +591,61 @@
 
   <section id="how">
     <div class="container">
-      <h2>How it works</h2>
-      <p class="section-subtitle">From first call to working solution — here's the process.</p>
+      <h2>Here's how it works.</h2>
       <div class="steps">
         <div class="step">
-          <h3>Free call (15 min)</h3>
-          <p>Tell us what's eating your time. We'll identify the biggest opportunities for AI and automation in your business.</p>
+          <h3>Tell me what's eating your time</h3>
+          <p>15 minutes on the phone. No pitch. Just tell me what's costing you hours every week.</p>
         </div>
         <div class="step">
-          <h3>Workflow audit</h3>
-          <p>We map your current processes and show you exactly where technology can save hours every week — with projected ROI.</p>
+          <h3>I show you what to fix (and what to leave alone)</h3>
+          <p>I look at your workflows and tell you what's worth automating. Not everything needs AI. I'll be straight about what does and what doesn't.</p>
         </div>
         <div class="step">
-          <h3>Build & deploy</h3>
-          <p>We build your solution, test it, and get your team comfortable using it. Most projects deliver working results within the first week.</p>
-        </div>
-        <div class="step">
-          <h3>Measure & optimize</h3>
-          <p>Track the time saved, leads captured, and revenue gained. We fine-tune until the numbers speak for themselves.</p>
+          <h3>We build it and you start getting time back</h3>
+          <p>I build it, test it with your team, and get it running. Most clients have something working in the first week.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <section>
+    <div class="container">
+      <h2>What it looks like on the other side.</h2>
+      <ul style="list-style:none;padding:0;display:grid;gap:0.75rem">
+        <li style="color:var(--gray);font-size:0.95rem;padding-left:1.2rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:600">&#10003;</span> Your marketing posted itself this morning. In your voice. You didn't touch it.</li>
+        <li style="color:var(--gray);font-size:0.95rem;padding-left:1.2rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:600">&#10003;</span> Every lead that came in overnight got a response. None slipped through.</li>
+        <li style="color:var(--gray);font-size:0.95rem;padding-left:1.2rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:600">&#10003;</span> Your team stopped doing data entry and started doing their actual jobs.</li>
+        <li style="color:var(--gray);font-size:0.95rem;padding-left:1.2rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:600">&#10003;</span> You checked your Google ranking and you're ahead of two competitors who weren't there last month.</li>
+        <li style="color:var(--gray);font-size:0.95rem;padding-left:1.2rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:600">&#10003;</span> You got 10 hours back this week.</li>
+      </ul>
+      <p style="color:var(--white);font-weight:600;margin-top:1.5rem">This is what becomes possible.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>What happens if you keep doing it the same way?</h2>
+      <ul style="list-style:none;padding:0;display:grid;gap:0.75rem">
+        <li style="color:var(--gray);font-size:0.95rem;padding-left:1.2rem;position:relative"><span style="position:absolute;left:0;color:#ef4444;font-weight:600">&times;</span> Leads keep falling through. You don't even know how many you're losing.</li>
+        <li style="color:var(--gray);font-size:0.95rem;padding-left:1.2rem;position:relative"><span style="position:absolute;left:0;color:#ef4444;font-weight:600">&times;</span> A competitor starts using AI. They're responding to leads in seconds, posting content daily, showing up above you on Google. You're still doing it all manually.</li>
+        <li style="color:var(--gray);font-size:0.95rem;padding-left:1.2rem;position:relative"><span style="position:absolute;left:0;color:#ef4444;font-weight:600">&times;</span> Your best people keep doing busywork. Eventually they get tired of it.</li>
+        <li style="color:var(--gray);font-size:0.95rem;padding-left:1.2rem;position:relative"><span style="position:absolute;left:0;color:#ef4444;font-weight:600">&times;</span> You keep spending evenings on marketing that isn't moving the needle.</li>
+      </ul>
+      <p style="color:var(--white);font-weight:600;margin-top:1.5rem">The gap is already opening. It gets wider every month.</p>
+    </div>
+  </section>
+
   <section id="results">
     <div class="container">
-      <h2>Real results</h2>
+      <h2>Work we've done</h2>
       <p class="section-subtitle">Projects we've shipped and the impact they delivered.</p>
       <div class="case-studies">
         <div class="case-study">
           <span class="case-study-label">Case Study</span>
           <h3>Automated SMS platform doubles student engagement</h3>
           <p>An automotive training company needed to keep students engaged between in-person assessments. Their team was stretched thin sending manual reminders, with no way to personalize outreach or track results.</p>
-          <p>We built an AI-powered SMS platform that analyzed each student's scores, identified weak areas, and sent personalized daily training links — fully automated, zero manual effort.</p>
+          <p>We built an AI-powered SMS platform that analyzed each student's scores, identified weak areas, and sent personalized daily training links. Fully automated, zero manual effort.</p>
           <div class="case-study-stats">
             <div class="stat">
               <span class="stat-number">2x</span>
@@ -622,7 +673,7 @@
         <div class="case-study">
           <span class="case-study-label">Case Study</span>
           <h3>AI agent orchestration platform for hospitality</h3>
-          <p>A hospitality concept needed an AI system that could take a natural language request, search for restaurants, calculate budgets, compose personalized messages, issue virtual payment cards, and notify restaurant staff — all autonomously.</p>
+          <p>A hospitality concept needed an AI system that could take a natural language request, search restaurants, calculate budgets, compose messages, issue virtual cards, and notify staff. All autonomously.</p>
           <p>We built an agentic AI platform where a single user input triggers a chain of AI-orchestrated actions: restaurant search, budget framing, note composition, Stripe virtual card issuance, and real-time restaurant notification. The AI agent makes decisions at each step, not just following a script.</p>
           <div class="case-study-stats">
             <div class="stat">
@@ -642,7 +693,7 @@
               <span class="stat-label">Built In</span>
             </div>
           </div>
-          <p style="color:var(--gray);font-size:0.85rem;margin-top:0.75rem;">This is the same pattern we use to build AI agents for local businesses — one input triggers an entire automated workflow, from customer inquiry to completed action.</p>
+          <p style="color:var(--gray);font-size:0.85rem;margin-top:0.75rem;">This is the same pattern we use to build AI agents for local businesses. One input triggers an entire automated workflow, from customer inquiry to completed action.</p>
         </div>
       </div>
     </div>
@@ -650,8 +701,8 @@
 
   <section id="pricing">
     <div class="container-wide">
-      <h2>Transparent pricing</h2>
-      <p class="section-subtitle">No surprises. Every project starts with a free conversation.</p>
+      <h2>What it costs</h2>
+      <p class="section-subtitle">Every project starts with a free conversation. If AI isn't the right fit, I'll tell you.</p>
       <div class="pricing-grid">
         <div class="price-card">
           <h3>Quick Wins</h3>
@@ -699,13 +750,12 @@
 
   <section id="about">
     <div class="container">
-      <h2>Who you're working with</h2>
+      <h2>Your guide</h2>
       <div class="about-layout">
         <div class="about-text">
-          <p><strong>J Scott Chapman</strong> has spent over ten years building custom software that solves real business problems. Based in Missoula, he's built everything from automated SMS engagement platforms to AI agent orchestration systems that coordinate multiple APIs in real time.</p>
-          <p>His philosophy is simple: <strong>"Machines should do machine work so humans can do human work."</strong></p>
-          <p>That means a business-first approach — understanding your challenges before writing a single line of code. No jargon, no over-engineering. Just practical technology that delivers measurable results: time saved, leads captured, revenue gained.</p>
-          <p>Every engagement starts with a free conversation. If AI isn't the right fit for your problem, he'll tell you that too.</p>
+          <p><strong>J Scott Chapman.</strong> Ten years building software. I've built HIPAA-compliant healthcare platforms, clinical visualization tools for medical devices, and an automated engagement system that doubled participation rates. I've taught JavaScript at Big Sky Code Academy, volunteered with Montana Code Girls, and spoken at Big Sky Dev Con and Carolina Code Conference. Last month I live-built a website from a spoken prompt at a free talk at the Missoula Public Library.</p>
+          <p><strong>"Machines should do machine work so humans can do human work."</strong></p>
+          <p>I start with your problem. If AI isn't the fix, I'll say so. If it is, I'll build it and get it running. Usually in days, not months.</p>
         </div>
         <div class="about-sidebar">
           <img src="scott-chapman-headshot-400.png" alt="J Scott Chapman — AI and automation consultant based in Missoula, Montana" class="about-headshot" width="400" height="400" loading="lazy">
@@ -715,12 +765,12 @@
               <span class="stat-label">Years building software</span>
             </div>
             <div class="about-stat">
-              <span class="stat-number">Days</span>
-              <span class="stat-label">Not months to deliver</span>
+              <span class="stat-number">4</span>
+              <span class="stat-label">AWS ML/AI Certifications</span>
             </div>
             <div class="about-stat">
               <span class="stat-number">Missoula</span>
-              <span class="stat-label">Based & committed</span>
+              <span class="stat-label">Based</span>
             </div>
           </div>
         </div>
@@ -733,7 +783,7 @@
       <h2>Questions</h2>
       <details>
         <summary>How can AI actually help my small business?</summary>
-        <p>AI can automate repetitive tasks like scheduling, invoicing, follow-ups, and social media posting — saving 10-20 hours per week. It can draft marketing content in your brand voice, respond to customer inquiries 24/7, analyze your competitors, and generate qualified leads. We start with a free audit to show exactly where AI saves you time and money.</p>
+        <p>AI can automate repetitive tasks like scheduling, invoicing, follow-ups, and social media posting. It can draft marketing content in your brand voice, respond to customer inquiries 24/7, analyze your competitors, and generate qualified leads. We start with a free audit to show exactly where AI saves you time and money.</p>
       </details>
       <details>
         <summary>What kinds of businesses do you work with?</summary>
@@ -749,7 +799,7 @@
       </details>
       <details>
         <summary>How long does a typical project take?</summary>
-        <p>Simple automations ship in 3-5 days. Larger builds take 2-6 weeks. We work iteratively — you see working results within the first week, not months later.</p>
+        <p>Simple automations ship in 3-5 days. Larger builds take 2-6 weeks. Most clients have something working in the first week.</p>
       </details>
       <details>
         <summary>What's the difference between this and hiring an IT company?</summary>
@@ -769,14 +819,14 @@
   <section class="urgency-strip">
     <div class="container">
       <p class="urgency-highlight">46% of Google searches are local. Half the people searching right now want a business like yours.</p>
-      <p>The question is whether they find <strong>you</strong> — or someone else. A 2-minute audit shows you exactly where you stand.</p>
+      <p>The question is whether they find <strong>you</strong> or someone else. A 2-minute audit shows you exactly where you stand.</p>
     </div>
   </section>
 
   <section class="bottom-cta" id="audit">
     <div class="container">
-      <h2>Every day you wait, your competitors get further ahead.</h2>
-      <p>Right now, someone in Missoula is searching for what you sell. Will they find you — or the business down the street? Enter your website and find out in 2 minutes.</p>
+      <h2>Right now, someone in Missoula is searching for exactly what you sell.</h2>
+      <p>Will they find you or the business down the street? Enter your website and find out in 2 minutes.</p>
       <form class="audit-form" id="hero-audit-form" aria-label="Free SEO audit">
         <div class="form-row">
           <input type="text" name="website" class="website-input" placeholder="yourwebsite.com" required aria-label="Website URL">
@@ -828,8 +878,6 @@
               _honeypot: honeypot.value
             })
           });
-
-          var data = await res.json();
 
           var data;
           try { data = await res.json(); } catch { data = {}; }

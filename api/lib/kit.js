@@ -1,5 +1,5 @@
 export async function addSubscriber(email, websiteUrl) {
-  const apiKey = process.env.KIT_API_KEY;
+  const apiKey = (process.env.KIT_API_KEY || "").trim();
   const formId = process.env.KIT_FORM_ID;
 
   if (!apiKey || !formId) return;
